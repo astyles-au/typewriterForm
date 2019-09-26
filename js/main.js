@@ -5,8 +5,8 @@ console.log('main js script loaded');
 Vue.component('type-writer', {
     data: function () {
       return {
-        formText: 'Add something here...'
-      }
+        formText: ''
+      } 
     },
     template: `
     <form>
