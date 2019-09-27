@@ -42,7 +42,7 @@ header, footer {
 }
 
 footer {
-    background: #bdc3c7;
+    background: #bcbcbc;
 }
 
 footer p {
@@ -53,9 +53,16 @@ form {
     width: 100%;
     height: auto;
 }
+
 textarea {
     font-size: 1.4rem;
     border: 0px;
     width: 100%;
     height: 600px;
+    transition: ease-in;
+    transition-delay: 1s;
+    padding: 1%;
+}
+textarea:hover {
+    background: #eeeeee;
 }
