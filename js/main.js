@@ -8,6 +8,24 @@ Vue.component('type-writer', {
             formText: ''
         }
     },
+
+    // watcher
+    watch: {
+        formText: function () {
+          console.log('Some keys were pressed!')
+               // howler js
+               var sound = new Howl({
+                src: ['sounds/360602__cabled-mess__typewriter-snippet-02.wav'],
+                autoplay: true,
+                loop: false,
+                volume: 0.5,
+                onend: function () {
+                    console.log('Finished!');
+                }
+            });
+        }
+      },
+
     methods: {
 
         // play typewriter ding sound via howler js - method
