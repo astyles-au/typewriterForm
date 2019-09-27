@@ -62,8 +62,8 @@ Vue.component('type-writer', {
     },
     template: `
     <form v-on:submit.prevent="onSubmit">
-        <textarea 
-        name="typeWriterPage" 
+        <textarea
+        name="typeWriterPage"
         id="typeWriterPage"
         cols="30" rows="10"
         v-model="formText"
@@ -76,7 +76,7 @@ Vue.component('type-writer', {
 })
 
 // main vue instance
-let vm = new Vue({
+ new Vue({
     el: '#app',
     data: {
         vueTest: 'Vue loaded ok!',
