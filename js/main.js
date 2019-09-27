@@ -11,7 +11,7 @@ Vue.component('type-writer', {
     methods: {
 
         // play typewriter ding sound via howler js - method
-        alert: function () {
+        nextLine: function () {
             console.log('You pressed enter!')
             // howler js
             var sound = new Howl({
@@ -19,20 +19,38 @@ Vue.component('type-writer', {
                 autoplay: true,
                 loop: false,
                 volume: 0.5,
-                onend: function() {
-                  console.log('Finished!');
+                onend: function () {
+                    console.log('Finished!');
                 }
-              });
-        } // end of alert method
+            });
+        }, // end of nextLine method
+
+
+        // play typewriter key sound via howler js - method
+        vintageKey: function () {
+            console.log('You didnt press enter!')
+            // howler js
+            var sound = new Howl({
+                src: ['sounds/360602__cabled-mess__typewriter-snippet-02.wav'],
+                autoplay: true,
+                loop: false,
+                volume: 0.5,
+                onend: function () {
+                    console.log('Finished!');
+                }
+            });
+        } // end of nextLine method
+
     },
     template: `
     <form v-on:submit.prevent="onSubmit">
         <textarea 
-        name="typeWriterForm" 
-        id="typeWiterForm"
+        name="typeWriterPage" 
+        id="typeWriterPage"
         cols="30" rows="10"
         v-model="formText"
-        v-on:keyup.enter="alert"
+        v-on:keyup.enter="nextLine"
+        v-on:keyup.a="vintageKey"
         >
         </textarea>
     </form>

@@ -61,7 +61,7 @@ textarea {
     height: 600px;
     transition: ease-in;
     transition-delay: 1s;
-    padding: 1%;
+    padding: 1%;S
 }
 textarea:hover {
     background: #eeeeee;
