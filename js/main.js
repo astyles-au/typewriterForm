@@ -12,7 +12,7 @@ Vue.component('type-writer', {
     // watcher
     watch: {
         formText: function () {
-          console.log('Some keys were pressed!')
+          // console.log('Some keys were pressed!')
                // howler js
                var sound = new Howl({
                 src: ['sounds/360602__cabled-mess__typewriter-snippet-02.wav'],
@@ -20,7 +20,7 @@ Vue.component('type-writer', {
                 loop: false,
                 volume: 0.5,
                 onend: function () {
-                    console.log('Finished!');
+                   // console.log('Finished!');
                 }
             });
         }
@@ -30,7 +30,7 @@ Vue.component('type-writer', {
 
         // play typewriter ding sound via howler js - method
         nextLine: function () {
-            console.log('You pressed enter!')
+            // console.log('You pressed enter!')
             // howler js
             var sound = new Howl({
                 src: ['sounds/406243__stubb__typewriter-ding-near-mono.wav'],
@@ -38,25 +38,25 @@ Vue.component('type-writer', {
                 loop: false,
                 volume: 0.5,
                 onend: function () {
-                    console.log('Finished!');
+                  //  console.log('Finished!');
                 }
             });
         }, // end of nextLine method
 
 
         // play typewriter key sound via howler js - method
-        vintageKey: function () {
-            console.log('You didnt press enter!')
-            // howler js
-            var sound = new Howl({
-                src: ['sounds/360602__cabled-mess__typewriter-snippet-02.wav'],
-                autoplay: true,
-                loop: false,
-                volume: 0.5,
-                onend: function () {
-                    console.log('Finished!');
-                }
-            });
+        // vintageKey: function () {
+        //     console.log('You didnt press enter!')
+        //     // howler js
+        //     var sound = new Howl({
+        //         src: ['sounds/360602__cabled-mess__typewriter-snippet-02.wav'],
+        //         autoplay: true,
+        //         loop: false,
+        //         volume: 0.5,
+        //         onend: function () {
+        //             console.log('Finished!');
+        //         }
+        //     });
         } // end of nextLine method
 
     },
@@ -68,7 +68,6 @@ Vue.component('type-writer', {
         cols="30" rows="10"
         v-model="formText"
         v-on:keyup.enter="nextLine"
-        v-on:keyup.a="vintageKey"
         >
         </textarea>
     </form>
@@ -79,6 +78,6 @@ Vue.component('type-writer', {
  new Vue({
     el: '#app',
     data: {
-        vueTest: 'Vue loaded ok!',
+        // vueTest: 'Vue loaded ok!',
     }
 });
