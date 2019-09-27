@@ -25,24 +25,37 @@ body {
 }
 
 header, main, footer {
-    font-family: var(--default-heading-font-family);
-    font-size: 2rem;
     display: flex;
     flex-flow: row wrap;
+}
+
+h1 {
+    font-family: var(--default-heading-font-family);
 }
 
 header *, main *, footer * {
     margin: auto;
 }
 
-form {
-    width: 100vw;
-    height: 50vh;
+header, footer {
+    padding: 5%;
 }
 
+footer {
+    background: #bdc3c7;
+}
+
+footer p {
+    padding: 1%;
+}
+
+form {
+    width: 100%;
+    height: auto;
+}
 textarea {
     font-size: 1.4rem;
     border: 0px;
-    width: 100vw;
-    height: 50vw;
+    width: 100%;
+    height: 600px;
 }
