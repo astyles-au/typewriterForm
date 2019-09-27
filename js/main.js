@@ -15,9 +15,15 @@ Vue.component('type-writer', {
             console.log('You pressed enter!')
             // howler js
             var sound = new Howl({
-                src: ['sound.webm', 'sound.mp3']
-            });
-        }
+                src: ['sounds/406243__stubb__typewriter-ding-near-mono.wav'],
+                autoplay: true,
+                loop: false,
+                volume: 0.5,
+                onend: function() {
+                  console.log('Finished!');
+                }
+              });
+        } // end of alert method
     },
     template: `
     <form v-on:submit.prevent="onSubmit">
