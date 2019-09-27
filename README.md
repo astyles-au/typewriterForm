@@ -5,6 +5,12 @@ Typewriter form app recreates the magic of typing on a physical type writer. For
 ## Dependencies:
 * vue JS https://vuejs.org/v2/guide/
 * Howler JS https://github.com/goldfire/howler.js
+* Google fonts - Plex https://fonts.google.com/featured/Plex?selection.family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i
+
+## Other sources:
+* https://freesound.org/people/yottasounds/sounds/380136/
+* https://freesound.org/people/cabled_mess/sounds/360602/
+* https://freesound.org/people/_stubb/sounds/406243/
 
 ### Getting started:
 In progress, check back soon.
