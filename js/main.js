@@ -68,7 +68,6 @@ Vue.component('type-writer', {
         cols="30" rows="10"
         v-model="formText"
         v-on:keyup.enter="nextLine"
-        v-on:keyup.a="vintageKey"
         >
         </textarea>
     </form>
@@ -79,6 +78,6 @@ Vue.component('type-writer', {
  new Vue({
     el: '#app',
     data: {
-        vueTest: 'Vue loaded ok!',
+        vueTest: 'Vue loaded ok!', // keeping this in place to test vue loaded as test
     }
 });
