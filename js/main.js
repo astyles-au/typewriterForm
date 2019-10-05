@@ -5,7 +5,7 @@ console.log('main js script loaded');
 Vue.component('type-writer', {
     data: function () {
         return {
-            formText: 'Type something in here...'
+            formText: ''
         }
     },
 
@@ -62,6 +62,6 @@ Vue.component('type-writer', {
  new Vue({
     el: '#app',
     data: {
-        // vueTest: 'Vue loaded ok!', // keeping this in place to test vue loaded as test
+        // vueTest: 'Vue loaded ok!' // keeping this in place to test vue loaded as test
     }
 });
