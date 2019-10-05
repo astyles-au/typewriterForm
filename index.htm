@@ -18,6 +18,8 @@
     <!-- Font Awesome 5 CDN, production -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
@@ -32,33 +34,43 @@
 
 <body>
 
-    <header>
-        <h1>
-            <i class="fas fa-feather-alt"></i>
-            Typewriter</h1>
-    </header>
+    <!-- vue js app -->
+    <div id="app">
 
-    <main id="app">
+        <header class="animated fadeInDown">
+            <h1>
+                <i class="fas fa-pencil-alt"></i>
+                {{ pageHeading }}
+            </h1>
+        </header>
 
-        <!-- {{vueTest}} -->
+        <main>
 
-        <type-writer>
-            <!-- the vue type writer component will populate here -->
-        </type-writer>
+            <!-- {{vueTest}} -->
 
-    </main>
+            <type-writer>
+                <!-- the vue type writer component will populate here -->
+            </type-writer>
 
-    <footer>
-        <p>View repo on my github:
-            <i class="fab fa-github"></i>
-            <a href="https://github.com/thelibstyles/typewriterForm">thelibstyles/typewriterForm</a>
-        </p>
-        
-        <p>Find me on twitter:
-            <i class="fab fa-twitter-square"></i>
-            <a href="https://twitter.com/thelibstyles?lang=en">twitter.com/thelibstyles</a>
-        </p>
-    </footer>
+        </main>
+
+        <footer>
+
+            <ul>
+                <li>
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/thelibstyles/typewriterForm">typewriterForm</a>
+                </li>
+
+                <li>
+                    <i class="fab fa-twitter-square"></i>
+                    <a href="https://twitter.com/thelibstyles?lang=en">thelibstyles</a>
+                </li>
+            </ul>
+
+        </footer>
+
+    </div> <!-- / vue js app -->
 
 </body>
 
