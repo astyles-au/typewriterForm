@@ -76,6 +76,6 @@ Vue.component('type-writer', {
     el: '#app',
     data: {
         // vueTest: 'Vue loaded ok!' // keeping this in place to test vue loaded as test
-        pageHeading: 'Typewriter'
+        pageHeading: 'Classic' + ' ' + 'Typewriter'
     }
 });

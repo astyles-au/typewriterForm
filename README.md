@@ -18,4 +18,4 @@ https://reverent-swartz-5ed03e.netlify.com/
 * https://freesound.org/people/_stubb/sounds/406243/
 
 ## Contact me:
-Find me on twitter https://twitter.com/thelibstyles?lang=en
+Find me on twitter https://twitter.com/thelibstyles
