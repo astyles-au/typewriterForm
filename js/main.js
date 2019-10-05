@@ -5,7 +5,7 @@ console.log('main js script loaded');
 Vue.component('type-writer', {
     data: function () {
         return {
-            formText: ''
+            formText: 'Type something in here...'
         }
     },
 
@@ -43,22 +43,6 @@ Vue.component('type-writer', {
             });
         }, // end of nextLine method
 
-
-        // play typewriter key sound via howler js - method
-        vintageKey: function () {
-            console.log('You didnt press enter!')
-            // howler js
-            var sound = new Howl({
-                src: ['sounds/360602__cabled-mess__typewriter-snippet-02.wav'],
-                autoplay: true,
-                loop: false,
-                volume: 0.5,
-                onend: function () {
-                    console.log('Finished!');
-                }
-            });
-        } // end of nextLine method
-
     },
     template: `
     <form v-on:submit.prevent="onSubmit">
@@ -78,6 +62,6 @@ Vue.component('type-writer', {
  new Vue({
     el: '#app',
     data: {
-        vueTest: 'Vue loaded ok!', // keeping this in place to test vue loaded as test
+        // vueTest: 'Vue loaded ok!', // keeping this in place to test vue loaded as test
     }
 });
