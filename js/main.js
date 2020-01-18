@@ -52,7 +52,7 @@ Vue.component('type-writer', {
                         console.log('Finished!');
                     }
                 });
-            }          
+            } // end of else statement           
     } // end of function
 }, // end of watcher
 
@@ -69,7 +69,7 @@ Vue.component('type-writer', {
         </textarea>
     </form>
     `
-}) // v-on:keyup.enter="nextLine"
+})
 
 // main vue instance
 new Vue({

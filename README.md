@@ -13,7 +13,6 @@ https://reverent-swartz-5ed03e.netlify.com/
 * Animate CSS https://daneden.github.io/animate.css/
 
 ## Other sources:
-* https://freesound.org/people/yottasounds/sounds/380136/
 * https://freesound.org/people/cabled_mess/sounds/360602/
 * https://freesound.org/people/_stubb/sounds/406243/
 
