@@ -23,19 +23,25 @@ Vue.component('type-writer', {
     // watcher
     watch: {
         formText: function () {
-          console.log('Some keys were pressed!')
-               // howler js sound play
-               var sound = new Howl({
-                src: [sound1],
-                autoplay: true,
-                loop: false,
-                volume: 0.5,
-                onend: function () {
-                    console.log('Finished!');
-                }
-            });
-        }
-      },
+
+            let x = event.which
+            console.log(event.which)
+
+            // if statement to test key pressed and allocate sound
+            if (x != 13) {
+                // howler js sound play
+                var sound = new Howl({
+                    src: [sound1],
+                    autoplay: true,
+                    loop: false,
+                    volume: 0.5,
+                    onend: function () {
+                        console.log('Finished!');
+                    }
+                });
+            }  // end of function          
+    }
+}, // end of watcher
 
     methods: {
 
@@ -72,7 +78,7 @@ Vue.component('type-writer', {
 })
 
 // main vue instance
- new Vue({
+new Vue({
     el: '#app',
     data: {
         // vueTest: 'Vue loaded ok!' // keeping this in place to test vue loaded as test
