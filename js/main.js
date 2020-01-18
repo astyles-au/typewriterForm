@@ -29,7 +29,7 @@ Vue.component('type-writer', {
 
             // if statement to test key pressed and allocate sound
             if (x != 13) {
-                // howler js sound play
+                // howler js sound play - type writer snippet
                 var sound = new Howl({
                     src: [sound1],
                     autoplay: true,
@@ -39,28 +39,23 @@ Vue.component('type-writer', {
                         console.log('Finished!');
                     }
                 });
-            }  // end of function          
-    }
+            }  // end of if statement
+            else {
+                console.log('the else statement has fired')
+                // howler js sound play - type writer ding sound
+                var sound = new Howl({
+                    src: [sound2],
+                    autoplay: true,
+                    loop: false,
+                    volume: 0.5,
+                    onend: function () {
+                        console.log('Finished!');
+                    }
+                });
+            }          
+    } // end of function
 }, // end of watcher
 
-    methods: {
-
-        // play typewriter ding sound via howler js - method
-        nextLine: function () {
-            console.log('You pressed enter!')
-            // howler js sound play
-            var sound = new Howl({
-                src: [sound2],
-                autoplay: true,
-                loop: false,
-                volume: 0.5,
-                onend: function () {
-                    console.log('Finished!');
-                }
-            });
-        }, // end of nextLine method
-
-    },
     template: `
     <form v-on:submit.prevent="onSubmit"
     class="animated fadeInUp">
@@ -70,12 +65,11 @@ Vue.component('type-writer', {
         cols="30" rows="10"
         placeholder="Start typing..."
         v-model="formText"
-        v-on:keyup.enter="nextLine"
         >
         </textarea>
     </form>
     `
-})
+}) // v-on:keyup.enter="nextLine"
 
 // main vue instance
 new Vue({
