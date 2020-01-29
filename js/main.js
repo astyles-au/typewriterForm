@@ -1,5 +1,5 @@
 // main script
-console.log('main js script loaded');
+// console.log('main js script loaded');
 
 
 // Howler js sound files
