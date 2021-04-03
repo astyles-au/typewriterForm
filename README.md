@@ -6,7 +6,7 @@ Typewriter form app recreates the magic of typing on a physical type writer. For
 https://reverent-swartz-5ed03e.netlify.com/
 
 ## Dependencies:
-* vue JS https://vuejs.org/v2/guide/
+* vue JS https://vuejs.org/v2/guide/ + https://vuejs.org/v2/guide/events.html#Key-Codes
 * Howler JS https://github.com/goldfire/howler.js
 * Google fonts - Plex https://fonts.google.com/featured/Plex
 * Font awesome 5 https://fontawesome.com
