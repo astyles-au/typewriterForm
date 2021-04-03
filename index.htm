@@ -46,11 +46,21 @@
 
         <main>
 
-            <!-- {{vueTest}} -->
+            <form v-on:submit.prevent="onSubmit"
+            class="animated fadeInUp">
 
-            <type-writer>
-                <!-- the vue type writer component will populate here -->
-            </type-writer>
+                <textarea
+                name="typeWriterPage"
+                id="typeWriterPage"
+                cols="30" rows="10"
+                placeholder="Start typing..."
+                v-on:keyup.Backspace="clearPage"
+                v-on:keyup.Enter="nextLine"
+                v-on:keyup.t="keyClack"
+                >
+                </textarea>
+
+            </form>
 
         </main>
 
